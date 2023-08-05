@@ -1,0 +1,103 @@
+const reservedWords = new Map();
+reservedWords.set("null", "NULL_RESERVEDWORD");
+reservedWords.set("True", "TRUE_BOOLEANO_RESERVEDWORD");
+reservedWords.set("False", "FALSE_BOOLEANO_RESERVEDWORD");
+reservedWords.set("key", "KEY_RESERVEDWORD");
+
+const constants = new Map();
+constants.set("fixed", "FIXED_CONSTANT");
+constants.set("PI", "PI_CONSTANT")
+
+const keywords = new Map();
+keywords.set("int", "ENTERO_TIPODATO_KEYWORD");
+keywords.set("char", "CARACTER_TIPODATO_KEYWORD");
+keywords.set("str", "CADENA_TIPODATO_KEYWORD");
+keywords.set("dec", "DECIMAL_TIPODATO_KEYWORD");
+keywords.set("boolean", "BOOLEANO_TIPODATO_KEYWORD");
+keywords.set("bool", "BOOLEANO_TIPODATO_KEYWORD");
+keywords.set("in", "IN_KEYWORD");
+keywords.set("if", "IF_KEYWORD");
+keywords.set("else", "ELSE_KEYWORD");
+keywords.set("match", "MATCH_KEYWORD");
+keywords.set("for", "FOR_KEYWORD");
+keywords.set("find", "FIND_KEYWORD");
+keywords.set("main", "MAIN_FUNCTION_DECLARATION");
+keywords.set("forward", "FORWARD_JUMP_KEYWORD");
+keywords.set("backward", "BACKWARD_JUMP_KEYWORD");
+keywords.set("print", "PRINT_KEYWORD");
+
+const operators = new Map();
+operators.set("+", "ADICION_OPERADOR");
+operators.set("-", "SUSTRACCION_OPERADOR");
+operators.set("*", "MULTIPLICACION_OPERADOR");
+operators.set("/", "DIVISION_OPERADOR");
+operators.set("%", "MODULO_OPERADOR");
+operators.set("&&", "LOGICO_Y_OPERADOR");
+operators.set("||", "LOGICO_O_OPERADOR");
+operators.set("!", "LOGICO_NO_OPERADOR");
+operators.set(">", "MAYOR_OPERADOR");
+operators.set("==", "IGUALDAD_OPERADOR");
+operators.set("<=", "MENOR_O_IGUAL_OPERADOR");
+operators.set(">=", "MAYOR_O_IGUAL_OPERADOR");
+operators.set("!=", "NO_IGUAL_OPERADOR");
+operators.set("=", "ASIGNACION_OPERADOR");
+operators.set("+=", "ADICION_ASIGNACION_OPERADOR");
+operators.set("-=", "SUSTRACCION_ASIGNACION_OPERADOR");
+operators.set("*=", "MULTIPLICACION_ASIGNACION_OPERADOR");
+operators.set("/=", "DIVISION_ASIGNACION_OPERADOR");
+operators.set("%=", "MODULO_ASIGNACION_OPERADOR");
+operators.set("?", "OPERADOR_TERNARIO");
+operators.set("...", "OPERADOR_TERNARIO");
+operators.set("~", "OPERADOR_TERNARIO");
+
+const operator = new Map();
+operator.set("++", "INCREMENTADOR_OPERADOR");
+operator.set("--", "DECREMENTADOR_OPERADOR");
+
+const delimeters = new Map();
+delimeters.set(",", "COMA_DELIMITADOR");
+delimeters.set(";", "PUNTOCOMA_DEMILITADOR");
+
+const brackets = new Map();
+brackets.set("{", "APERTURA_LLAVE_BRACKET");
+brackets.set("}", "CIERRE_LLAVE_BRACKET");
+brackets.set("[", "APERTURA_CUADRADO_BRACKET");
+brackets.set("]", "CIERRE_CUADRADO_BRACKET");
+brackets.set("(", "APERTURA_PARENTESIS_BRACKET");
+brackets.set(")", "CIERRE_PARENTESIS_BRACKET");
+
+const specialCharacters = new Map();
+specialCharacters.set("!", "exclamation_mark");
+specialCharacters.set("@", "at_symbol");
+specialCharacters.set("#", "number_sign_symbol");
+specialCharacters.set("$", "dollar_symbol");
+specialCharacters.set("%", "percentage_symbol");
+specialCharacters.set("^", "caret_symbol");
+specialCharacters.set("&", "ampersand_symbol");
+specialCharacters.set("*", "asterisk_symbol");
+specialCharacters.set("(", "open_round_bracket");
+specialCharacters.set(")", "close_round_bracket");
+specialCharacters.set("-", "dash_symbol");
+specialCharacters.set("_", "underscore_symbol");
+specialCharacters.set("+", "plus_symbol");
+specialCharacters.set("=", "equal_symbol");
+specialCharacters.set(",", "comma_symbol");
+specialCharacters.set(".", "period_symbol");
+specialCharacters.set("<", "less_than_symbol");
+specialCharacters.set(">", "greater_than_symbol");
+specialCharacters.set("?", "question_mark_symbol");
+specialCharacters.set("/", "forward_slash_symbol");
+specialCharacters.set(":", "colon_symbol");
+specialCharacters.set(";", "semicolon_symbol");
+specialCharacters.set("'", "single_quote_symbol");
+specialCharacters.set("\"", "double_quote_symbol");
+specialCharacters.set("|", "pipe_symbol");
+specialCharacters.set("\\", "backslash_symbol");
+specialCharacters.set("[", "open_square_bracket");
+specialCharacters.set("]", "close_square_bracket");
+specialCharacters.set("{", "open_curly_bracket");
+specialCharacters.set("}", "close_curly_bracket");
+specialCharacters.set("`", "backtick_symbol");
+specialCharacters.set("~", "tilde_symbol");
+
+export {constants, reservedWords, keywords, operator, operators, delimeters, brackets, specialCharacters };
